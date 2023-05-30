@@ -15,15 +15,15 @@ The Base Conversion Tool provides two main functions: `digit_converter()` and `t
 The `digit_converter()` gotten from the `baseConverter file` function can be used to convert a number from one base to another. Here's its signature:
 
 ```python
-def digit_converter(number: int, input_base=10, output_base=None)
+def digit_converter(number, input_base=10, output_base=None)
 ```
 
-The `input_base` parameter specifies the base of the input number. If the input_base is not given a default base of 10 is assumed. The `number` parameter is the number to be converted, and should be an integer. The `output_base` parameter specifies the base to convert the number to. If `output_base` is not specified, the function returns the number in decimal format.
+The `input_base` parameter specifies the base of the input number. If the `input_base` is not given a default base of 10 is assumed. The `number` parameter is the number to be converted. The `output_base` parameter specifies the base to convert the number to. If `output_base` is not specified, the function returns the number in decimal format.
 
 Here's an example of how to use `digit_converter()`:
 
 ```python
-from base_conversion import digit_converter
+from baseConverter import digit_converter
 
 # Convert binary number '1010' to octal
 result = digit_converter('1010',2, 8)

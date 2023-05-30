@@ -1,5 +1,5 @@
-from toBase import to_base
-from toDecimal import to_decimal
+from .toBase import to_base
+from .toDecimal import to_decimal
 
 
 def digit_converter(number, input_base=10, output_base=None):
@@ -24,6 +24,3 @@ def digit_converter(number, input_base=10, output_base=None):
         return to_base(number, output_base=output_base)
     else:
         return to_base(number, output_base=output_base)
-
-result = digit_converter(1010,2, )
-print(result)
